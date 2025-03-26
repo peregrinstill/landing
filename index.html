@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEAL TALK DOT US - THE TRUTH THEY DON'T WANT YOU TO DIGEST</title>
+    <style>
+        body {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffbcbc' fill-opacity='0.36' fill-rule='evenodd'/%3E%3C/svg%3E");
+            color: #00ff00;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath fill='%23FF00FF' d='M16 0C7.163 0 0 7.163 0 16s7.163 16 16 16 16-7.163 16-16S24.837 0 16 0zm0 30C8.268 30 2 23.732 2 16S8.268 2 16 2s14 6.268 14 14-6.268 14-14 14zm7-14a1 1 0 0 1-1 1h-5v5a1 1 0 0 1-2 0v-5h-5a1 1 0 0 1 0-2h5v-5a1 1 0 0 1 2 0v5h5a1 1 0 0 1 1 1z'/%3E%3C/svg%3E"), auto;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff00ff, #00ffff);
+            text-align: center;
+            padding: 20px;
+            border: 5px ridge #ffcc00;
+            animation: rainbow 5s linear infinite;
+            text-shadow: 2px 2px #ff0000, -2px -2px #0000ff;
+        }
+
+        @keyframes rainbow {
+            0% { border-color: red; }
+            14% { border-color: orange; }
+            28% { border-color: yellow; }
+            42% { border-color: green; }
+            57% { border-color: blue; }
+            71% { border-color: indigo; }
+            85% { border-color: violet; }
+            100% { border-color: red; }
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+            transform: rotate(-2deg);
+        }
+
+        .blink {
+            animation: blinker 0.8s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border: 3px dashed #ff00ff;
+            margin-right: 20px;
+            overflow: hidden;
+        }
+
+        .content {
+            flex: 1;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border: 3px double #00ffff;
+            min-width: 300px;
+        }
+
+        .content p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .truth-box {
+            background-color: #990000;
+            border: 2px solid #ffff00;
+            padding: 10px;
+            margin: 15px 0;
+            transform: rotate(1deg);
+        }
+
+        .visitor-counter {
+            text-align: center;
+            background-color: #000;
+            border: 1px solid #fff;
+            padding: 5px;
+            margin: 10px 0;
+            font-family: "Courier New", monospace;
+            font-weight: bold;
+        }
+
+        .link-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .link-list li {
+            margin-bottom: 10px;
+        }
+
+        .link-list a {
+            color: #ff00ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link-list a:hover {
+            color: #ffff00;
+            text-decoration: underline wavy;
+        }
+
+        marquee {
+            background-color: #000;
+            color: #ff0000;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        .gif-heaven {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .gif-placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: #ff00ff;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); background-color: #ff00ff; }
+            50% { transform: scale(1.1); background-color: #00ffff; }
+            100% { transform: scale(1); background-color: #ff00ff; }
+        }
+
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            border-top: 3px ridge #ffcc00;
+            font-size: 12px;
+        }
+
+        .cube-theory {
+            border: 4px solid red;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: #000;
+            transform: skew(-5deg);
+        }
+
+        .cube-theory h2 {
+            color: #ff0000;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .construction {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .construction img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .webring {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 0;
+            gap: 10px;
+        }
+
+        .webring a {
+            color: #ffff00;
+            text-decoration: none;
+            padding: 5px;
+            background-color: #330033;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #000000;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ff00ff;
+            border: 2px solid #00ffff;
+        }
+
+
+        .guestbook {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #330033;
+            border: 2px dotted #ffff00;
+        }
+
+        .guestbook input, .guestbook textarea {
+            display: block;
+            margin: 10px 0;
+            padding: 5px;
+            background-color: #000;
+            color: #00ff00;
+            border: 1px solid #ff00ff;
+            width: 90%;
+        }
+
+        .guestbook button {
+            background-color: #ff00ff;
+            color: #000;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: auto;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span class="blink">* MEAL TALK DOT US *</span></h1>
+        <div>THE 4-DIMENSIONAL NUTRITIONAL CUBIC REALITY THEY HIDE FROM YOU</div>
+    </header>
+
+    <marquee scrollamount="5" behavior="alternate">!!! WELCOME TO THE TRUTH ZONE !!! NO GOVERNMENT AGENTS ALLOWED !!! LAST UPDATED: 03/13/1999 !!! THE FOOD PYRAMID IS A LIE !!!</marquee>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="visitor-counter">
+                VISITORS: 1,337,420
+            </div>
+
+            <h3>== NAVIGATE ==</h3>
+            <ul class="link-list">
+                <li><a href="#truth">THE MEAL TRUTH</a></li>
+                <li><a href="#cube">4D MEAL CUBE</a></li>
+                <li><a href="#conspiracy">FOOD CONSPIRACY</a></li>
+                <li><a href="#guestbook">SIGN GUESTBOOK</a></li>
+            </ul>
+
+            <div class="construction">
+                <div style="text-align:center; font-weight:bold; color:#ffff00; padding:10px; background-color:#000000; border:2px dashed #ff0000;">
+                    UNDER<br>CONSTRUCTION
+                </div>
+            </div>
+
+            <div class="truth-box">
+                <span class="blink">WARNING!!!!</span>
+                THIS SITE CONTAINS INFORMATION DANGEROUS TO THE GLOBAL FOOD ESTABLISHMENT!!!!!
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 id="truth">THE MEAL TRUTH THEY DON'T WANT YOU TO KNOW!!!!</h2>
+
+            <p>Welcome to <b>MEAL TALK DOT US</b>, the ONLY website brave enough to tell you the REAL TRUTH about food, meals, and the conspiracy to keep humans from achieving NUTRITIONAL TRANSCENDENCE!!!!</p>
+
+            <p>Since 1945, the global meal-industrial complex has DELIBERATELY programmed humans to eat 3 meals per day. BUT THE TRUTH IS that ancient humans consumed food in a 4-DIMENSIONAL CUBIC PATTERN that aligned with the Earth's magnetic field and cosmic vibrations!!!!!</p>
+
+            <div class="truth-box">
+                <h3>DID YOU KNOW??</h3>
+                The so-called "RECOMMENDED DAILY ALLOWANCE" was invented by THEM to keep your third eye CLOSED and your PINEAL GLAND calcified!!!! WAKE UP SHEEPLE!!!!!
+            </div>
+
+            <p>I have spent 27 YEARS researching the TRUE nature of human digestion and have discovered that TIME ITSELF is a CUBIC construct invented to control our meal times!!! When I tried to publish my findings, I was BANNED from every nutritional conference and BLOCKED by so-called "scientists" who are AFRAID of my REVOLUTIONARY discoveries!!!!!</p>
+
+        </body>
+    </html>
